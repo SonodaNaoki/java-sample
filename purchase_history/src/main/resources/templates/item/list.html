@@ -5,6 +5,17 @@
         <title>Hello Thymeleaf</title>
     </head>
     <body>
-        </h1>/item/list></h1>
+        </h1>商品一覧</h1>
+        <table>
+            <tr th:each="user : ${datalist}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.pricae}"></td>
+                <td th:text="${user.date}"></td>
+                <td th:text="${user.infomation}"></td>
+                <td th:text="${user.image}"></td>
+            </tr>
+        </table>
+        <a href="/admin/item/regist">商品の追加</a>
     </body>
 </html>

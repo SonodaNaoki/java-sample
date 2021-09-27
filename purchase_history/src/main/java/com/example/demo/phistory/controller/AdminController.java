@@ -1,4 +1,4 @@
-package com.example.demo.memo.controller;
+package com.example.demo.phistory.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,10 +12,11 @@ public class AdminController {
         model.addAttribute("message", "Hello Thymeleaf!!");
         return "admin/index";
     }
+
     @GetMapping("/admin/login")
     public String adminLogin(Model model) {
         model.addAttribute("message", "Hello Thymeleaf!!");
+
         return "admin/login";
     }
-
 }

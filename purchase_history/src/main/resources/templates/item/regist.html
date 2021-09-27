@@ -5,6 +5,14 @@
         <title>Hello Thymeleaf</title>
     </head>
     <body>
-        </h1>/item/regist></h1>
+        </h1>商品の追加<h1>
+        <h3 th:text="${message}"></h3>
+        <form action="/admin/item/regist/update" method="post">
+            <p><label>名前：<input type="text" name="namae" size="40" maxlength="20"></label></p>
+            <label>個数:<input type="number"></label>
+            <p><label>コメント:<input name="number"></label></p>
+            <p><input type="submit" value="送信する"></p>
+            <a href="/admin/item/list">リスト</a>
+        </form>
     </body>
 </html>
